@@ -17,7 +17,7 @@ const WebpackChunksAssetsManifest = require('webpack-chunks-assets-manifest');
 
 module.exports = {
   entry: {
-		index: '.src/index.js'
+    index: '.src/index.js'
     // Your entry points
   },
   output: {
@@ -38,19 +38,19 @@ module.exports = {
 ### Sample output
 ```json
 {
-	"index" : {
-		"js": [
-			"runtime-46bacc26e330fbf21c0d.js",
-			"vendor-d3548574b0b9152ead6d.js",
-			"index-9c68d5e8de1b810a80e4.js"
-		],
-		"css": ["index-9c68d5e8de1b810a80e4.css"],
-	},
-	"async-chunk" : {
-		"js": [
-			"async-chunk-9c68d5e8de1b810a80e4.js"
-		]
-	}
+ "index" : {
+    "js": [
+    "runtime-46bacc26e330fbf21c0d.js",
+    "vendor-d3548574b0b9152ead6d.js",
+    "index-9c68d5e8de1b810a80e4.js"
+  ],
+  "css": ["index-9c68d5e8de1b810a80e4.css"],
+},
+  "async-chunk" : {
+    "js": [
+      "async-chunk-9c68d5e8de1b810a80e4.js"
+    ]
+  }
 }
 ```
 
