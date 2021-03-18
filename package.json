@@ -1,0 +1,67 @@
+{
+	"name": "webpack-chunks-assets-manifest",
+	"description": "This Webpack plugin will generate a JSON file that matches the original filename with the hashed version.",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"types": "./dist/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TakNePoidet/webpack-chunks-assets-manifest.git"
+	},
+	"bugs": {
+		"url": "https://github.com/TakNePoidet/webpack-chunks-assets-manifest/issues"
+	},
+	"homepage": "https://github.com/TakNePoidet/webpack-chunks-assets-manifest",
+	"keywords": [
+		"webpack-assets-manifest",
+		"webpack-chunks-assets-manifest",
+		"webpack-plugin",
+		"webpack",
+		"plugin",
+		"assets",
+		"manifest",
+		"chunks",
+		"json",
+		"subresource",
+		"integrity",
+		"sri"
+	],
+	"files": [
+		"dist/",
+		"index.js"
+	],
+	"scripts": {
+		"start": "rollup -c -w",
+		"build": "rimraf dist/* && cross-env NODE_ENV=production rollup -c",
+		"lint": "eslint --fix .",
+		"prettier": "prettier  --ignore-unknown --write .",
+		"beautifier": "yarn lint && yarn prettier"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^17.1.0",
+		"@rollup/plugin-json": "^4.1.0",
+		"@rollup/plugin-node-resolve": "^11.2.0",
+		"@rollup/plugin-typescript": "^8.2.0",
+		"cross-env": "^7.0.3",
+		"eslint": "^7.22.0",
+		"eslint-config-taknepoidet": "^1.0.7",
+		"prettier": "^2.2.1",
+		"rollup": "^2.41.4",
+		"rollup-plugin-node-externals": "^2.2.0",
+		"rollup-plugin-sourcemaps": "^0.6.3",
+		"rollup-plugin-terser": "^7.0.2",
+		"taknepoidet-prettier-config": "^1.0.3",
+		"tslib": "^2.1.0",
+		"typescript": "^4.2.3",
+		"webpack": "^5.26.2"
+	},
+	"dependencies": {
+		"lodash": "^4.17.21",
+		"schema-utils": "^3.0.0",
+		"tapable": "^2.2.0"
+	},
+	"pre-commit": [
+		"beautifier"
+	]
+}

@@ -1,0 +1,53 @@
+{
+	"title": "Webpack Chunks Assets Manifest options schema",
+	"description": "Webpack Chunks Assets Manifest options",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"output": {
+			"type": "string",
+			"default": "assets-manifest.json"
+		},
+		"writeToDisk": {
+			"oneOf": [
+				{
+					"type": "boolean"
+				}
+			],
+			"default": "auto"
+		},
+		"assetsGroup": {
+			"type": "object",
+			"additionalProperties": true,
+			"propertyNames": {
+				"type": "string"
+			},
+			"default": {
+				"js": {},
+				"css": {}
+			}
+		},
+		"done": {
+			"default": null,
+			"oneOf": [
+				{
+					"instanceof": "Function"
+				},
+				{
+					"type": "null"
+				}
+			]
+		},
+		"transform": {
+			"default": null,
+			"oneOf": [
+				{
+					"instanceof": "Function"
+				},
+				{
+					"type": "null"
+				}
+			]
+		}
+	}
+}
