@@ -6,7 +6,7 @@
 	"properties": {
 		"output": {
 			"type": "string",
-			"default": "assets-manifest.json"
+			"default": "chunks-assets-manifest.json"
 		},
 		"writeToDisk": {
 			"oneOf": [
