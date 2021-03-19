@@ -99,3 +99,7 @@ The `transform` and `done` options are automatically tapped into the appropriate
 | ---- | ---- | --------- |
 | `transform` | `SyncWaterfallHook` | `function(chunksAssetsGroups){}` |
 | `done` | `AsyncSeriesHook` | `async function(chunksAssetsGroups, stats){}` |
+
+
+## Changelog
+See the whole [Changelog](/docs/CHANGELOG.md)
