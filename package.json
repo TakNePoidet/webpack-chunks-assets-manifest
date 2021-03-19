@@ -1,7 +1,7 @@
 {
 	"name": "webpack-chunks-assets-manifest",
 	"description": "This Webpack plugin will generate a JSON file that matches the original filename with the hashed version.",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"main": "index.js",
 	"license": "MIT",
 	"types": "./dist/index.d.ts",
@@ -54,7 +54,7 @@
 		"taknepoidet-prettier-config": "^1.0.3",
 		"tslib": "^2.1.0",
 		"typescript": "^4.2.3",
-		"webpack": "^5.26.2"
+		"webpack": "^5"
 	},
 	"dependencies": {
 		"lodash": "^4.17.21",

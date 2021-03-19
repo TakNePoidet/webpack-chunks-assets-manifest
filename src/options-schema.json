@@ -12,6 +12,9 @@
 			"oneOf": [
 				{
 					"type": "boolean"
+				},
+				{
+					"type": "string"
 				}
 			],
 			"default": "auto"
